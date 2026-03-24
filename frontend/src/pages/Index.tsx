@@ -302,20 +302,20 @@ export default function HomePage() {
             {[
               {
                 icon: Zap,
-                title: 'REBEL DESIGN',
-                desc: 'Every piece is a statement against digital conformity.',
+                title: t('feature_rebel_title'),
+                desc: t('feature_rebel_desc'),
                 color: 'purple' as const,
               },
               {
                 icon: Shield,
-                title: 'PREMIUM QUALITY',
-                desc: 'Crafted with precision. Built to last in any reality.',
+                title: t('feature_quality_title'),
+                desc: t('feature_quality_desc'),
                 color: 'blue' as const,
               },
               {
                 icon: Eye,
-                title: 'GLOBAL SHIPPING',
-                desc: 'From the underground to your door. Worldwide delivery.',
+                title: t('feature_shipping_title'),
+                desc: t('feature_shipping_desc'),
                 color: 'purple' as const,
               },
             ].map((feature, i) => (

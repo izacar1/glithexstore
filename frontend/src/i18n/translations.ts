@@ -58,6 +58,12 @@ type TranslationKeys = {
   cta_title: string;
   cta_subtitle: string;
   cta_button: string;
+  feature_rebel_title: string;
+  feature_rebel_desc: string;
+  feature_quality_title: string;
+  feature_quality_desc: string;
+  feature_shipping_title: string;
+  feature_shipping_desc: string;
 
   // Shop
   shop_title: string;
@@ -341,6 +347,12 @@ const translations: Record<Language, TranslationKeys> = {
     cta_title: 'JOIN THE REBELLION',
     cta_subtitle: 'The system wants conformity. We offer resistance. Wear the code that breaks the matrix.',
     cta_button: 'SHOP NOW',
+    feature_rebel_title: 'REBEL DESIGN',
+    feature_rebel_desc: 'Every piece is a statement against digital conformity.',
+    feature_quality_title: 'PREMIUM QUALITY',
+    feature_quality_desc: 'Crafted with precision. Built to last in any reality.',
+    feature_shipping_title: 'GLOBAL SHIPPING',
+    feature_shipping_desc: 'From the underground to your door. Worldwide delivery.',
 
     shop_title: 'THE ARSENAL',
     shop_subtitle: 'SIGNAL DETECTED. LOADOUT READY.',
@@ -612,6 +624,12 @@ const translations: Record<Language, TranslationKeys> = {
     cta_title: 'ÚNETE A LA REBELIÓN',
     cta_subtitle: 'El sistema quiere conformidad. Nosotros ofrecemos resistencia. Viste el código que rompe la matrix.',
     cta_button: 'COMPRAR AHORA',
+    feature_rebel_title: 'DISEÑO REBELDE',
+    feature_rebel_desc: 'Cada prenda es una declaración contra la conformidad digital.',
+    feature_quality_title: 'CALIDAD PREMIUM',
+    feature_quality_desc: 'Confeccionado con precisión. Diseñado para durar en cualquier realidad.',
+    feature_shipping_title: 'ENVÍO GLOBAL',
+    feature_shipping_desc: 'Desde el subsuelo hasta tu puerta. Entrega internacional.',
 
     shop_title: 'EL ARSENAL',
     shop_subtitle: 'Equípate para la revolución digital.',
@@ -883,6 +901,12 @@ const translations: Record<Language, TranslationKeys> = {
     cta_title: 'REJOIGNEZ LA RÉBELLION',
     cta_subtitle: 'Le système veut la conformité. Nous offrons la résistance. Portez le code qui brise la matrice.',
     cta_button: 'ACHETER MAINTENANT',
+    feature_rebel_title: 'DESIGN REBELLE',
+    feature_rebel_desc: 'Chaque pièce est une déclaration contre la conformité numérique.',
+    feature_quality_title: 'QUALITÉ PREMIUM',
+    feature_quality_desc: 'Confectionné avec précision. Conçu pour durer dans toutes les réalités.',
+    feature_shipping_title: 'LIVRAISON MONDIALE',
+    feature_shipping_desc: 'Des profondeurs du réseau jusqu à votre porte. Livraison internationale.',
 
     shop_title: 'L\'ARSENAL',
     shop_subtitle: 'Équipez-vous pour la révolution numérique.',
@@ -1153,6 +1177,12 @@ const translations: Record<Language, TranslationKeys> = {
     cta_title: 'SCHLIESS DICH DER REBELLION AN',
     cta_subtitle: 'Das System will Konformität. Wir bieten Widerstand. Trage den Code, der die Matrix bricht.',
     cta_button: 'JETZT KAUFEN',
+    feature_rebel_title: 'REBELLISCHES DESIGN',
+    feature_rebel_desc: 'Jedes Teil ist ein Statement gegen digitale Konformität.',
+    feature_quality_title: 'PREMIUM-QUALITÄT',
+    feature_quality_desc: 'Präzise gefertigt. Für jede Realität gebaut.',
+    feature_shipping_title: 'WELTWEITER VERSAND',
+    feature_shipping_desc: 'Aus dem Untergrund direkt zu dir. Internationale Lieferung.',
 
     shop_title: 'DAS ARSENAL',
     shop_subtitle: 'Rüste dich für die digitale Revolution.',
