@@ -15,7 +15,6 @@ import BlogArticleLifestyle from './pages/BlogArticleLifestyle';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import CookiePolicy from './pages/CookiePolicy';
 import NotFound from './pages/NotFound';
-import AuthCallback from './pages/AuthCallback';
 import AuthError from './pages/AuthError';
 import CookieConsent from './components/CookieConsent';
 import ScrollToTop from './components/ScrollToTop';
@@ -87,7 +86,6 @@ const App = () => {
                 <Route path="/blog/cyberpunk-lifestyle" element={<BlogArticleLifestyle />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/cookie-policy" element={<CookiePolicy />} />
-                <Route path="/auth/callback" element={<AuthCallback />} />
                 <Route path="/auth/error" element={<AuthError />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
