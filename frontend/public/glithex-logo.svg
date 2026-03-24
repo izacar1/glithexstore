@@ -1,0 +1,21 @@
+<svg width="1666" height="1406" viewBox="0 0 1666 1406" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glithexPurpleWide" x1="103" y1="42" x2="1481" y2="1368" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D946EF" />
+      <stop offset="0.52" stop-color="#A21CAF" />
+      <stop offset="1" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M107 43L847 783L365 1265H40L522 783L42 303L107 43Z"
+    fill="url(#glithexPurpleWide)"
+  />
+  <path
+    d="M928 782L1150 560H1664V988H706L928 782Z"
+    fill="url(#glithexPurpleWide)"
+  />
+  <path
+    d="M0 1228H1665V1406H0V1228Z"
+    fill="url(#glithexPurpleWide)"
+  />
+</svg>
