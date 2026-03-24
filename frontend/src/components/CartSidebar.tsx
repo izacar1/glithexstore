@@ -78,6 +78,12 @@ export default function CartSidebar() {
 
   const handleProcessCheckout = () => {
     setSubmissionError('');
+
+    if (!config.API_BASE_URL) {
+      setSubmissionError(t('checkout_submit_error'));
+      return;
+    }
+
     setIsSubmittingOrder(true);
 
     fetch(`${config.API_BASE_URL}/order`, {

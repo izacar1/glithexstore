@@ -29,6 +29,11 @@ export default function ShopPage() {
   const [mobileColumns, setMobileColumns] = useState<1 | 2>(2);
 
   const fetchOrders = async () => {
+    if (!config.API_BASE_URL) {
+      setOrders([]);
+      return;
+    }
+
     try {
       const res = await fetch(`${config.API_BASE_URL}/orders`);
       if (!res.ok) {

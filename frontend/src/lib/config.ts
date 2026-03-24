@@ -8,7 +8,7 @@ let configLoading = true;
 
 // Default fallback configuration
 const defaultConfig = {
-  API_BASE_URL: 'http://127.0.0.1:3001',
+  API_BASE_URL: import.meta.env.DEV ? 'http://127.0.0.1:3001' : '',
 };
 
 // Function to load runtime configuration
