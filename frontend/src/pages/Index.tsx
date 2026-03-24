@@ -157,12 +157,12 @@ export default function HomePage() {
             </h2>
           </FadeInSection>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {FEATURED_PRODUCTS.map((product, index) => (
               <FadeInSection key={product.id} delay={index * 100}>
                 <CyberCard onClick={() => navigate(`/product/${product.id}`)} className="group overflow-hidden flex flex-col h-full cursor-pointer hover:-translate-y-[4px] hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(139,92,246,0.12)] bg-cyber-card border border-cyber-border hover:border-cyber-purple/50">
                   {/* Product Image */}
-                  <div className="aspect-[4/5] bg-gradient-to-br from-cyber-surface to-cyber-card flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-[3/4] sm:aspect-[4/5] bg-gradient-to-br from-cyber-surface to-cyber-card flex items-center justify-center relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-cyber-purple/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none" />
                     
                     {product.images && product.images.length > 0 ? (
@@ -172,7 +172,7 @@ export default function HomePage() {
                         className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.08]"
                       />
                     ) : (
-                      <ShoppingBag className="w-12 h-12 text-cyber-purple/30 group-hover:text-cyber-purple/60 transition-transform duration-500 ease-out group-hover:scale-[1.05]" />
+                      <ShoppingBag className="w-9 h-9 sm:w-12 sm:h-12 text-cyber-purple/30 group-hover:text-cyber-purple/60 transition-transform duration-500 ease-out group-hover:scale-[1.05]" />
                     )}
                     
                     {/* Glitch overlay on hover */}
@@ -189,20 +189,20 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <div className="p-4 flex flex-col flex-grow justify-between">
+                  <div className="p-3 sm:p-4 flex flex-col flex-grow justify-between">
                     <div>
-                      <h3 className="font-orbitron font-semibold text-sm text-gray-900 dark:text-white tracking-wider leading-tight mb-2 uppercase">
+                      <h3 className="font-orbitron font-semibold text-[11px] sm:text-sm text-gray-900 dark:text-white tracking-[0.12em] sm:tracking-wider leading-tight mb-1.5 sm:mb-2 uppercase">
                         {product.name}
                       </h3>
-                      <p className="font-mono text-[10px] text-gray-600 dark:text-gray-400 opacity-80 mb-3">
+                      <p className="font-mono text-[9px] sm:text-[10px] text-gray-600 dark:text-gray-400 opacity-80 mb-2.5 sm:mb-3 line-clamp-2">
                         {product.taglineKey ? t(product.taglineKey as any) : 'Urban cyberwear unit'}
                       </p>
                       
-                      <div className="flex gap-1.5 mt-2 mb-3">
+                      <div className="flex gap-1 mt-2 mb-2.5 sm:mb-3">
                         {product.colors.map((color, i) => (
                           <div
                             key={i}
-                            className="w-4 h-4 rounded-full border border-cyber-border"
+                            className="w-3 h-3 sm:w-4 sm:h-4 rounded-full border border-cyber-border"
                             style={{ backgroundColor: color }}
                           />
                         ))}
@@ -210,7 +210,7 @@ export default function HomePage() {
                     </div>
                     
                     <div className="pt-2">
-                       <span className="font-mono text-white text-lg font-semibold drop-shadow-[0_0_6px_rgba(139,92,246,0.4)]">
+                       <span className="font-mono text-white text-base sm:text-lg font-semibold drop-shadow-[0_0_6px_rgba(139,92,246,0.4)]">
                          €{product.price.toFixed(2)}
                        </span>
                     </div>
