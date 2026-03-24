@@ -300,6 +300,7 @@ type TranslationKeys = {
   checkout_size_short: string;
   checkout_not_available: string;
   checkout_promo_placeholder: string;
+  checkout_submit_error: string;
 
   // Auth Error
   auth_error_title: string;
@@ -573,6 +574,7 @@ const translations: Record<Language, TranslationKeys> = {
     checkout_size_short: 'SZ',
     checkout_not_available: 'N/A',
     checkout_promo_placeholder: 'XXXX-XXXX',
+    checkout_submit_error: 'We could not send your order. Please try again.',
     auth_error_title: 'Authentication Error',
     auth_error_default_message: 'Sorry, your authentication information is invalid or has expired',
     auth_error_auto_return_prefix: 'Will automatically return to the home page in',
@@ -843,6 +845,7 @@ const translations: Record<Language, TranslationKeys> = {
     checkout_size_short: 'TLL',
     checkout_not_available: 'N/D',
     checkout_promo_placeholder: 'XXXX-XXXX',
+    checkout_submit_error: 'No se pudo enviar el pedido. Intentalo de nuevo.',
     auth_error_title: 'Error de autenticación',
     auth_error_default_message: 'Tu información de autenticación no es válida o ha caducado',
     auth_error_auto_return_prefix: 'Volverás automáticamente a la página principal en',
@@ -1112,6 +1115,7 @@ const translations: Record<Language, TranslationKeys> = {
     checkout_size_short: 'TAIL',
     checkout_not_available: 'N/D',
     checkout_promo_placeholder: 'XXXX-XXXX',
+    checkout_submit_error: 'Nous n avons pas pu envoyer votre commande. Veuillez reessayer.',
     auth_error_title: 'Erreur d’authentification',
     auth_error_default_message: 'Vos informations d’authentification sont invalides ou ont expiré',
     auth_error_auto_return_prefix: 'Retour automatique à la page d’accueil dans',
@@ -1383,6 +1387,7 @@ const translations: Record<Language, TranslationKeys> = {
     checkout_size_short: 'GR',
     checkout_not_available: 'K.A.',
     checkout_promo_placeholder: 'XXXX-XXXX',
+    checkout_submit_error: 'Ihre Bestellung konnte nicht gesendet werden. Bitte versuchen Sie es erneut.',
     auth_error_title: 'Authentifizierungsfehler',
     auth_error_default_message: 'Ihre Authentifizierungsdaten sind ungültig oder abgelaufen',
     auth_error_auto_return_prefix: 'Automatische Rückkehr zur Startseite in',

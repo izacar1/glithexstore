@@ -106,7 +106,7 @@ export default function CartSidebar() {
       })
       .catch((error) => {
         console.error(error);
-        setSubmissionError('No se pudo enviar el pedido. Inténtalo de nuevo.');
+        setSubmissionError(t('checkout_submit_error'));
       })
       .finally(() => {
         setIsSubmittingOrder(false);
