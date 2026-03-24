@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1774364212319,
+    "product": {
+      "id": "1-#FFFFFF-S",
+      "nameKey": "Glitch Core Tee",
+      "price": 29.99,
+      "color": "#FFFFFF",
+      "size": "S",
+      "quantity": 1,
+      "image": "/products/glitch_core_front.png"
+    },
+    "items": [
+      {
+        "id": "1-#FFFFFF-S",
+        "nameKey": "Glitch Core Tee",
+        "price": 29.99,
+        "color": "#FFFFFF",
+        "size": "S",
+        "quantity": 1,
+        "image": "/products/glitch_core_front.png"
+      }
+    ],
+    "customer": {
+      "fname": "Izan",
+      "lname": "Tester",
+      "email": "test@glithex.dev",
+      "address": "Calle Neon 123",
+      "city": "Madrid",
+      "country": "Spain",
+      "postal": "28001",
+      "phone": "+34600000000"
+    },
+    "totals": {
+      "subtotal": 29.99,
+      "shipping": 0,
+      "total": 29.99
+    },
+    "createdAt": "2026-03-24T14:56:52.319Z"
+  }
+]
