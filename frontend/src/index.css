@@ -420,6 +420,71 @@ html {
   transition: background-color 0.3s ease;
 }
 
+html[data-compact-desktop='true'] .desktop-nav {
+  display: none !important;
+}
+
+html[data-compact-desktop='true'] .mobile-nav-toggle {
+  display: inline-flex !important;
+}
+
+html[data-compact-desktop='true'] .hero-section {
+  height: auto;
+  min-height: 100svh;
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+}
+
+html[data-compact-desktop='true'] .hero-shell {
+  max-width: 960px;
+  gap: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+html[data-compact-desktop='true'] .hero-copy {
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+html[data-compact-desktop='true'] .hero-title {
+  font-size: clamp(3.5rem, 8vw, 5.5rem) !important;
+  line-height: 0.92;
+}
+
+html[data-compact-desktop='true'] .hero-slogan {
+  font-size: clamp(1.2rem, 2.8vw, 2rem) !important;
+  letter-spacing: 0.14em;
+  margin-bottom: 2.25rem;
+}
+
+html[data-compact-desktop='true'] .hero-cta-row {
+  flex-direction: column;
+  width: min(100%, 28rem);
+  margin-inline: auto;
+}
+
+html[data-compact-desktop='true'] .hero-cta-row > * {
+  width: 100%;
+}
+
+html[data-compact-desktop='true'] .hero-visual {
+  display: none !important;
+}
+
+html[data-compact-desktop='true'] .home-features-grid,
+html[data-compact-desktop='true'] .footer-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 2rem;
+}
+
+@media (max-width: 920px) {
+  html[data-compact-desktop='true'] .home-features-grid,
+  html[data-compact-desktop='true'] .footer-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
 /* Specific theme-aware transitions can be added to individual components as needed */
 
 /* Subtle Spasmodic Glitch */

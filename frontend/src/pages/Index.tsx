@@ -30,7 +30,7 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -52,23 +52,23 @@ export default function HomePage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40vw] max-w-[400px] h-[40vw] max-h-[400px] bg-cyber-blue/10 dark:bg-cyber-blue/20 blur-[80px] rounded-full pointer-events-none" />
 
         {/* Content */}
-        <div className="relative z-10 px-4 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 backdrop-blur-[2px] py-12 rounded-3xl lg:pt-24">
+        <div className="hero-shell relative z-10 px-4 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 backdrop-blur-[2px] py-12 rounded-3xl lg:pt-24">
           
           {/* Left Column (Text) */}
-          <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
+          <div className="hero-copy flex-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
             <p className="font-mono font-bold text-cyber-purple dark:text-cyber-cyan text-xs md:text-sm tracking-[0.3em] mb-6 opacity-90 animate-pulse">
               {'>'} {t('hero_subtitle')} _
             </p>
 
-            <h1 className="font-orbitron font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider mb-4 drop-shadow-[0_0_25px_rgba(139,92,246,0.3)]">
+            <h1 className="hero-title font-orbitron font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider mb-4 drop-shadow-[0_0_25px_rgba(139,92,246,0.3)]">
               <GlitchText className="text-white">GLITHEX</GlitchText>
             </h1>
 
-            <p className="font-orbitron font-bold text-xl md:text-3xl text-cyber-purple dark:text-cyber-glow tracking-[0.2em] mb-12 drop-shadow-md">
+            <p className="hero-slogan font-orbitron font-bold text-xl md:text-3xl text-cyber-purple dark:text-cyber-glow tracking-[0.2em] mb-12 drop-shadow-md">
               {t('hero_slogan')}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mt-4">
+            <div className="hero-cta-row flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mt-4">
               {/* Primary CTA with Outer Glow */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-cyber-purple to-cyber-cyan rounded-lg blur opacity-40 group-hover:opacity-100 transition duration-500 scale-105 group-hover:scale-110"></div>
@@ -98,7 +98,7 @@ export default function HomePage() {
           </div>
 
           {/* Right Column: Visual Placeholder */}
-          <div className="flex-1 w-full max-w-lg hidden lg:flex justify-center items-center relative">
+          <div className="hero-visual flex-1 w-full max-w-lg hidden lg:flex justify-center items-center relative">
             <div className="relative w-full aspect-[4/5] rounded-2xl group hover:scale-[1.02] transition-transform duration-500">
                {/* Outer Glow */}
                <div className="absolute -inset-1 bg-gradient-to-tr from-cyber-purple/30 to-cyber-cyan/30 rounded-2xl blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
@@ -298,7 +298,7 @@ export default function HomePage() {
       {/* Features / Brand Values */}
       <section className="py-20 md:py-28 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="home-features-grid grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 icon: Zap,

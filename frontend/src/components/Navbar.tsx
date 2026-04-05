@@ -51,7 +51,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="desktop-nav hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
               const isShop = link.path === '/shop';
               const isActive = location.pathname === link.path;
@@ -155,7 +155,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-gray-300 hover:text-cyber-purple transition-colors"
+              className="mobile-nav-toggle md:hidden p-2 text-gray-300 hover:text-cyber-purple transition-colors"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

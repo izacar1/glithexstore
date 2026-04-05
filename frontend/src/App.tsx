@@ -66,6 +66,29 @@ const App = () => {
     applyTheme(theme);
   }, [lang, theme]);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    const coarsePointerQuery = window.matchMedia('(pointer: coarse)');
+
+    const updateCompactDesktopMode = () => {
+      const isCompactDesktop =
+        coarsePointerQuery.matches &&
+        window.innerWidth >= 768 &&
+        window.innerWidth <= 1280;
+
+      root.dataset.compactDesktop = String(isCompactDesktop);
+    };
+
+    updateCompactDesktopMode();
+    window.addEventListener('resize', updateCompactDesktopMode);
+    coarsePointerQuery.addEventListener?.('change', updateCompactDesktopMode);
+
+    return () => {
+      window.removeEventListener('resize', updateCompactDesktopMode);
+      coarsePointerQuery.removeEventListener?.('change', updateCompactDesktopMode);
+    };
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageContext.Provider value={{ lang, setLang }}>
